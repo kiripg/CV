@@ -1,12 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Bevan:regular,italic);
+@import url(https://fonts.googleapis.com/css?family=Mukta:200,300,regular,500,600,700,800);
 
 body {
-    display: grid;
-    grid-template-rows: auto 1fr; /* Divide el cuerpo en dos filas: una para el navegador y otra para el contenido principal */
     max-width: 400vh;
-    max-height: 400vh;
     margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
-    overflow: hidden; /* Evita el desbordamiento */
+    background: linear-gradient(273deg,#949fdb,#799ad2,#9281d5);
+    background-size: 180% 180%;
+    animation: gradient-animation 21s ease infinite;
+    font-family: 'Mukta', Arial, Helvetica, sans-serif;
 }
 
 li{
@@ -19,7 +20,7 @@ li{
     align-items: center;
     background-color: green;
     color: white;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 10px; /* Agrega un poco de relleno para el navegador */
 }
 
@@ -28,15 +29,40 @@ li{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: white; /* Cambia el fondo del contenido principal a blanco */
     padding: 10px; /* Agrega un poco de relleno para el contenido principal */
     border-radius: 5px;
+}
+
+.favicon a {
+    text-decoration: none;
+}
+
+.navegador li a {
+    display:flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #804fc4;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navegador li a:hover {
+    background-color: #9281d59f;
+    color: #fff;
+}
+
+.favicon a {
+    background-color: transparent;
+    color: inherit;
+    border: none;
 }
 
 section {
     display: grid;
     grid-template-columns: 2fr 1fr; /* Dos tercios y un tercio */
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     max-width: 100%;
     max-height: 100%;
     padding: 10px; /* Agrega un poco de relleno para el contenido de la sección */
@@ -63,6 +89,12 @@ h1{
     font-weight: 300;
 }
 
+h2{
+    font-size: 1.5rem;
+    font-family: 'Bevan', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
 
 #lema{
     font-style: italic;
@@ -73,3 +105,58 @@ h1{
  font-weight: 800;
     font-size: 1.5rem;
 }
+
+.estudios{
+    grid-column: 2/2;
+    background-color: blueviolet;
+    color: white;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+}
+
+.laboral{
+    grid-row: 3/3;
+    grid-column: 1/4;
+}
+
+footer{
+    
+    background-color: black;
+    color: white;
+    min-height: 100px;
+    padding: 3px;
+
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+#modoOscuroBtn{
+    background-color: transparent;
+    background: none;
+    border: none;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
