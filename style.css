@@ -1,0 +1,13 @@
+.navegador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: green;
+    color: white;
+    justify-content: space-around;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
