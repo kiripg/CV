@@ -1,0 +1,13 @@
+li{
+    list-style-type: none;
+}
+
+.navegador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: green;
+    color: white;
+    justify-content: space-around;
+    padding: 10px; /* Agrega un poco de relleno para el navegador */
+}
