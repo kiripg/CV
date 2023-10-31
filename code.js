@@ -1,11 +1,30 @@
 "use strict";
 
-// Selecciona el botón del modo oscuro por su ID
-const modoOscuroBtn = document.getElementById("modoOscuroBtn");
-const body = document.body;
+function toggleDarkMode() {
+    var element = document.body;
+    element.classList.toggle(".dark-mode");
+  }
+  
 
-// Agrega un event listener para el clic en el botón
-modoOscuroBtn.addEventListener("click", () => {
-    // Cambia el modo oscuro añadiendo o eliminando la clase 'dark-mode' en el cuerpo
-    body.classList.toggle("dark-mode");
+
+
+const button = document.getElementById("modoOscuroBtn");
+button.onclick = toggleDarkMode;
+const openModalBtn = document.getElementById("openModal");
+const closeModalBtn = document.getElementById("closeModal");
+const contactModal = document.getElementById("contactModal");
+
+openModalBtn.addEventListener("click", () => {
+    contactModal.style.display = "block";
 });
+
+closeModalBtn.addEventListener("click", () => {
+    contactModal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target === contactModal) {
+        contactModal.style.display = "none";
+    }
+});
+

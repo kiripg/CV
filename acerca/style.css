@@ -8,19 +8,6 @@ body {
     background-size: 180% 180%;
     animation: gradient-animation 21s ease infinite;
     font-family: 'Mukta', Arial, Helvetica, sans-serif;
-    
-}
-
-h1{
-  font-size: 2rem;
-  font-family: 'Bevan', Arial, Helvetica, sans-serif;
-  font-weight: 300;
-}
-
-h2{
-  font-size: 1.5rem;
-  font-family: 'Bevan', Arial, Helvetica, sans-serif;
-  font-weight: 100;
 }
 
 li{
@@ -84,25 +71,39 @@ li{
     border: none;
 }
 
-.cuerpo{
-  display: flex;
+h1{
+    font-size: 2rem;
+    font-family: 'Bevan', Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
 
-.enlaces {
-    width: 30%;
-    padding: 20px;
-    background-color: #f0f0f0;
+h2{
+    font-size: 1.5rem;
+    font-family: 'Bevan', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.cuerpo{
+    display: flex;
   }
-  .contenido {
-    flex: 1;
-    padding: 20px;
-  }
-  .info {
-    display: none;
-  }
-  .info.visible {
-    display: block;
-  }
+  
+  .enlaces {
+      width: 30%;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    .contenido {
+      flex: 1;
+      padding: 20px;
+    }
+    .info {
+      display: none;
+    }
+    .info.visible {
+      display: block;
+    }
+  
+  
 
 
 
@@ -112,7 +113,6 @@ footer{
     color: white;
     min-height: 100px;
     padding: 3px;
-    
 
 }
 

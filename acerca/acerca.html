@@ -4,13 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de</title>
+    <link rel="icon" type="image/jpg" href="../fotos/favicon-16x16.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="code.js"></script>
 </head>
 <body>
     <ul class="navegador">
+        <li class="favicon"> <a href="../index.html"><img src="../fotos/favicon-32x32.png" alt="KPG"></a></li>
         <li class="principal"><a href="../index.html">Principal</a></li>
         <li class="proyectos"><a href="../proyectos/proyectos.html">Proyectos</a></li>
-        <li class="contacto"><a href="../contacto/contacto.html">Contacto</a></li>
-        <li class="acerca"><a href="acerca.html">Acerca de</a></li>
+         <li class="acerca"><a href="acerca.html">Acerca de</a></li>
+         <li class="modoOscuro">
+        <button  id="modoOscuroBtn" onclick="toggleDarkMode()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#cccccc" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26a5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg></button>
+            </li>
     </ul>
+    
+    <h1>Acerca de</h1>
+
+    <section class="cuerpo">
+    <div class="enlaces">
+        <ul>
+          <li><a href="#link1">Bocetos</a></li>
+          <li><a href="#link2">Fuentes</a></li>
+          <li><a href="#link3">Paleta de colores</a></li>
+          <li><a href="#link4">Contenido</a></li>
+          <li><a href="#link5">Decisiones estéticas</a></li>
+          <li><a href="#link6">Bibliografía</a></li>
+        </ul>
+      </div>
+      <div class="contenido">
+        <div id="link1" class="info">
+          <h2>Bocetos</h2>
+          <p> A continuación, podemos ver los bocetos inciales del proyecto. Al ser bocetos, han sufrido leves modificaciones, como la eliminación
+            de la página de contactos, que ha sido incorporada en la página principal por la falta de contenido. También podemos ver los bocetos
+            para móviles, aunque estos no han podido ser implementados.
+          </p>
+          <img src="imagen1.jpg" alt="Imagen 1">
+        </div>
+        <div id="link2" class="info">
+          <h2>Fuentes</h2>
+          <p>La fuente escogida para el título es <em>Bevan</em>, recogida a través de Google Fonts. Esta tipografía para los títulos 
+          no solo proporciona el énfasis perfecto, sino que además casa con la imagen que quiero dar. Una persona suave y fácil de trabajar con ella.
+        <br>
+        En cuanto al contenido, se ha escogido la fuente <em>Mukta</em>, que es una fuente fácil de leer, y encuadra con la tipografía del título.
+        Es agradable a la vista, y no se deforma en ningún tamaño o formato, además de no ser un estándar.</p>
+          <img src="imagen2.jpg" alt="Imagen 2">
+        </div>
+        <div id="link3" class="info">
+          <h2>Paleta de colores</h2>
+          <p>Esta es la información relacionada con el Enlace 3.</p>
+          <img src="imagen3.jpg" alt="Imagen 3">
+        </div>
+        <div id="link4" class="info">
+          <h2>Contenido</h2>
+          <p>Esta es la información relacionada con el Enlace 1.</p>
+          <img src="imagen1.jpg" alt="Imagen 1">
+        </div>
+        <div id="link5" class="info">
+          <h2>Decisiones estéticas</h2>
+          <p>Esta es la información relacionada con el Enlace 2.</p>
+          <img src="imagen2.jpg" alt="Imagen 2">
+        </div>
+        <div id="link6" class="info">
+          <h2>Bibliografía</h2>
+          <p>He sido ayudada a través de youtube, codepen.io y algunas IA, que me han dado ideas y soluciones para algunos problemas.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer>
+        <ul class="rrss">
+            <li><a href="instagram.com"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#cccccc" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg></a></li>
+            <li><a href="https://github.com/kiripg"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256"><path fill="#cccccc" d="M212.62 75.17A63.7 63.7 0 0 0 206.39 26A12 12 0 0 0 196 20a63.71 63.71 0 0 0-50 24h-20a63.71 63.71 0 0 0-50-24a12 12 0 0 0-10.39 6a63.7 63.7 0 0 0-6.23 49.17A61.5 61.5 0 0 0 52 104v8a60.1 60.1 0 0 0 45.76 58.28A43.66 43.66 0 0 0 92 192v4H76a20 20 0 0 1-20-20a44.05 44.05 0 0 0-44-44a12 12 0 0 0 0 24a20 20 0 0 1 20 20a44.05 44.05 0 0 0 44 44h16v12a12 12 0 0 0 24 0v-40a20 20 0 0 1 40 0v40a12 12 0 0 0 24 0v-40a43.66 43.66 0 0 0-5.76-21.72A60.1 60.1 0 0 0 220 112v-8a61.5 61.5 0 0 0-7.38-28.83ZM196 112a36 36 0 0 1-36 36h-48a36 36 0 0 1-36-36v-8a37.87 37.87 0 0 1 6.13-20.12a11.65 11.65 0 0 0 1.58-11.49a39.9 39.9 0 0 1-.4-27.72a39.87 39.87 0 0 1 26.41 17.8a12 12 0 0 0 10.1 5.53h32.35a12 12 0 0 0 10.11-5.53a39.84 39.84 0 0 1 26.41-17.8a39.9 39.9 0 0 1-.4 27.72a12 12 0 0 0 1.61 11.53A37.85 37.85 0 0 1 196 104Z"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/kirissapovedano/"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256"><path fill="#cccccc" d="M216 20H40a20 20 0 0 0-20 20v176a20 20 0 0 0 20 20h176a20 20 0 0 0 20-20V40a20 20 0 0 0-20-20Zm-4 192H44V44h168Zm-100-36v-52a12 12 0 0 1 21.43-7.41A40 40 0 0 1 192 152v24a12 12 0 0 1-24 0v-24a16 16 0 0 0-32 0v24a12 12 0 0 1-24 0Zm-16-52v52a12 12 0 0 1-24 0v-52a12 12 0 0 1 24 0ZM68 80a16 16 0 1 1 16 16a16 16 0 0 1-16-16Z"/></svg></a></li>
+        </ul>
+
+        <p class="copyright">Creado por Kirissa Povedano para Diseño de Interfaces. Año 2023.</p>
+
+</footer>
 </body>
 </html>
