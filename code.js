@@ -28,3 +28,9 @@ window.addEventListener("click", (e) => {
     }
 });
 
+
+let subida = document.querySelector(".btnSubida");
+
+subida.addEventListener("click", ()=>{
+    window.scrollTo(0, 0);
+})
