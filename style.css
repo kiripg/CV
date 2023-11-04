@@ -380,7 +380,7 @@ footer{
     background: var(--degradadoBtn);
     color: var(--letras);
     min-height: 100px;
-    padding: 3px;
+    padding: 20px;
 
 }
 

@@ -1,6 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Bevan:regular,italic);
 @import url(https://fonts.googleapis.com/css?family=Mukta:200,300,regular,500,600,700,800);
 
+
+:root {
+  --base: #903CB4;
+  --segundaBase: #804FC4;
+  --lila: #9281D5;
+  --lilaAzul: #7B68EE;
+  --gris: #949FDB;
+  --destacado: #799AD2;
+  --degradadoFondo: linear-gradient(273deg,#949fdb,#799ad2,#9281d5) ;
+  --degradadoBtn: linear-gradient(100deg, #913CB4, #804FC5);
+  --letras: whitesmoke;
+ 
+}
+
 body {
     max-width: 400vh;
     margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
@@ -106,70 +120,66 @@ li{
 
 
 
-  /*#img {
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    grid-gap: 10px; 
-   }
-   
-   #img img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-   }
-   
-   img:hover {
-    -webkit-transform:scale(1.3);
-    transform:scale(1.3);
-   }*/
 
-
-   #img {
-    display: flex; /* Utilizamos flexbox para alinear las imágenes */
-  }
   
-  #img img {
-    width: 300px; /* Ancho fijo para todas las imágenes */
-    height: 500px; /* Alto fijo para todas las imágenes */
-    object-fit: cover; /* Ajusta la imagen al cuadro sin deformarla */
-    margin: 10px; /* Márgenes entre las imágenes */
-    transition: transform 0.5s ease;
-  }
-  
- #img img:hover {
-    transform: scale(1);
-  }
-  
-
-  #mapa{
+  #img {
     display: flex;
-    
-    justify-content: center;
+    flex-direction: row;
+    max-width: 25%;
+    margin: 10px; 
+    transition: all 3s ease(gravity);
+    background: var(--gris) ;
+    cursor: zoom-in;
+  }
+  
+#img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 3s ease(downhill);
+  position: relative;
+  position: relative;
+  box-shadow: 0 0 0 #0000;
+  opacity: 0.67;
+  filter: sepia(80%) hue-rotate(180deg);
+}
+  
+
+  #mapa img{
+    display: block;
+    margin: 0 auto;
   }
 
 
-footer{
+  footer{
     
-  background-color: black;
-  color: white;
-  min-height: 100px;
-  padding: 3px;
-  
+    background: var(--degradadoBtn);
+    color: var(--letras);
+    min-height: 100px;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 97.30%;
 
 }
 
 footer ul{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;  
 }
 
+
+
 .copyright{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 @keyframes gradient-animation {
     0% {
