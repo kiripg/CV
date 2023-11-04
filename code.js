@@ -53,7 +53,7 @@ oscuroBtn.addEventListener("click", function() {
   } else {
     // Agregar la clase "dark-mode" al elemento body
     body.classList.add("dark-mode");
-    // Cambiar el texto del botón toggle
+    
   }
 });
 
@@ -65,10 +65,10 @@ hamburguesa.addEventListener("click", () => {
   const expandido = menuNav.getAttribute("aria-expanded") === "true";
   if(expandido){
     menuNav.setAttribute("aria-expanded", "false");
-    menuNav.classList.toggle("e");
+    menuNav.classList.toggle("expandido");
   }
   else{
     menuNav.setAttribute("aria-expanded", "true");
-    menuNav.classList.toggle("menu-visible");
+    menuNav.classList.toggle("expandido");
   }
 });
