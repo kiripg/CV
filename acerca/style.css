@@ -94,6 +94,19 @@ li{
     display: flex;
 }
 
+h1{
+    font-size: 2rem;
+    font-family: 'Bevan', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: var(--letras);
+}
+
+h2{
+    font-size: 1.5rem;
+    font-family: 'Bevan', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: var(--letras);
+}
 
 .cuerpo{
     display: flex;
@@ -108,12 +121,14 @@ li{
     }
 
     a:visited{
-        color: var(--base);
+        color: var(--letras);
     }
     .contenido {
       flex: 1;
       padding: 20px;
     }
+
+    
 
     .contenido img{
         display: block;

@@ -1,8 +1,5 @@
 "use strict";
-  
-  function mostrarOcultarMenu() {
-    lista.classList.toggle("menu-visible");
-}
+
 
 
 
@@ -30,12 +27,6 @@ let subida = document.querySelector(".btnSubida");
 subida.addEventListener("click", ()=>{
     window.scrollTo(0, 0);
 })
-
-
-const lista = document.querySelector(".navegador");
-const menu = document.querySelector(".menu-hamburguesa");
-
-menu.addEventListener("click", mostrarOcultarMenu);
 
 
 let oscuroBtn = document.getElementById("modoOscuroBtn");
