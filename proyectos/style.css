@@ -20,7 +20,7 @@ body {
   max-width: 400vh;
   margin: 0;
   /* Elimina los márgenes predeterminados del cuerpo */
-  background: linear-gradient(273deg, #949fdb, #799ad2, #9281d5);
+  background: var(--degradadoFondo);
   background-size: 180% 180%;
   animation: gradient-animation 21s ease infinite;
   font-family: 'Mukta', Arial, Helvetica, sans-serif;
@@ -37,8 +37,8 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #799ad2a6;
-  color: white;
+  background-color: var(--destacado);
+  color: var(--letras);
   border-radius: 25px;
   justify-content: space-evenly;
   padding: 1px;
@@ -63,15 +63,15 @@ li {
   display: flex;
   align-items: center;
   padding: 5px 10px;
-  background-color: #804fc4;
-  color: #fff;
+  background-color: var(--degradadoBtn);
+  color: var(--letras);
   border-radius: 25px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .navegador li a:hover {
-  background-color: #7B68EE;
+  background-color: var(--lilaAzul);
   color: #fff;
 }
 
@@ -81,10 +81,6 @@ li {
   border: none;
 }
 
-.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
 
 .menu-hamburguesa {
   display: none;
@@ -115,7 +111,7 @@ button {
 }
 
 button:hover {
-  background: #7B68EE;
+  background: var(--lila);
 }
 
 
