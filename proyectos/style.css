@@ -96,6 +96,10 @@ li {
   background-color: transparent;
   background: none;
   border: none;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+ 
 }
 
 button {
@@ -432,8 +436,6 @@ footer ul {
   #img img:nth-child(9) {
     display: none;
   }
-
-
 
   #modoOscuroBtn {
     display: none;
